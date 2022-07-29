@@ -103,3 +103,11 @@ img{
     color: #ffffff;
     background-color: #1e61c7;
 }
+.entrada>select[id="estados"],select[id="cidades"]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
