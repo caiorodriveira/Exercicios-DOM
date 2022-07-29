@@ -1,0 +1,105 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-size: 1.25em;
+}
+
+/*Formulários*/
+form {
+    display: flex;
+    flex-flow: column;
+    max-width: 600%;
+}
+
+form>* {
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Campos*/
+.vazio {
+    background-color: white;
+}
+.entrada>input {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.entrada>select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.saida {
+    padding: 22px;
+}
+
+/*Botões*/
+button {
+    background-color: #3da7ee;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.limpar {
+    background-color: #139e13;
+}
+button:hover {/*Hover do botão*/
+    background-color: #2b76a8;
+}
+
+button[class="limpar"]:hover {/*Hover do botão limpar*/
+    background-color: #036e03;
+}
+
+/*Estilização da Tabela*/
+table[class="imc-table"] {
+    border-style: dotted;/*Define a borda pontilhada.*/
+}
+.imc-table {/*Faz o estilo para as linhas. **/
+    text-align: center; /** Centraliza o conteúdo. **/
+}
+th{/** Faz o estilo para as células do cabeçalho. **/
+    background: #666;/** Muda para um fundo cinza. **/
+    color: white;/** Troca a cor da fonte para branco. **/
+}
+
+/*Elementos inseridos do JavaScript*/
+.select {
+    background-color: #9dda9d;
+}
+.result{
+    color: #2f8d2f;
+}
+#result-mdc {
+    text-align: center;
+}
+img{
+    max-width: 50%;
+    border-radius: 10px;
+    align-self: center;
+}
+
+/*Saida das cidades*/
+#nome_cidade{
+    border:dotted;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1e61c7;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <title>Exercicios Fudidos</title>
+</head>
+
+<body>
+    <h1 align="center"> Exercicios </h1>
+    <div class="form">
+        <form id="medidas">
+            <h3>Medidas</h3>
+            <div class="entrada">
+                <label> Valor para conversão: </label>
+                <input id="valor" type="text" name="valor">
+                <select name="tipo" id="tipo">
+                    <option selected disabled value="">--Tipo--</option>
+                    <option value="m"> Metros</option>
+                    <option value="cm">Centimetros</option>
+                    <option value="km">Kilometros</option>
+                </select>
+            </div>
+            <label> Centimeros: </label>
+            <input class="vazio" id="centimetros" type="text" name="centimetros" disabled>
+
+            <label> Metros: </label>
+            <input class="vazio" id="metros" type="text" name="metros" disabled>
+
+            <label> Kilometros: </label>
+            <input class="vazio" id="kilometros" type="text" name="kilometros" disabled>
+            <div align="center">
+                <button type="submit">Converter</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="form">
+        <form id="imc">
+            <h3>Calculadora IMC</h3>
+            <div align="center">
+                <table class="imc-table">
+                    <tr class="imc=table">
+                        <th>Resultado</th>
+                        <th>Situação</th>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Abaixo de 17</td>
+                        <td>Muito abaixo do peso</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Entre 17 e 18,49</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Entre 18,5 e 24,99</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Entre 25 e 29,99</td>
+                        <td>Acima do peso</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Entre 30 e 34,99</td>
+                        <td>Obesidade I</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Entre 35 e 39,99</td>
+                        <td>Obesidade II (severa)</td>
+                    </tr>
+                    <tr class="imc=table">
+                        <td>Acima de 40</td>
+                        <td>Obesidade III (mórbida)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="entrada">
+                <label> Entrada : </label>
+                <input id="peso" type="text" name="peso" placeholder="Peso(kg)">
+                <label> </label>
+                <input id="altura" type="text" name="altura" placeholder="Altura(metros)">
+            </div>
+
+            <label> IMC: </label>
+            <input id="result-imc" type="text" name="result-imc" disabled class="vazio"><br>
+
+            <div align="center">
+                <button type="submit">Calcular IMC</button>
+                <button type="button" class="limpar">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="form">
+        <form id="mdc">
+            <h3>MDC</h3>
+            <div class="entrada">
+                <label> 1º valor: </label>
+                <input id="n1" type="number" name="n1">
+                <label> 2º valor: </label>
+                <input id="n2" type="number" name="n2">
+            </div>
+            <div id="result-mdc">
+            </div>
+            <div align="center">
+                <button type="submit">Calcular MDC</button>
+                <button type="button" class="limpar">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <div class="form">
+        <form id="trocaimagem">
+            <h3 align="center">Troca Imagem</h3>
+            <div align="center">
+                <img id="imagem"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqP53FFlvEMJuleJkBbt1Vx2cDXJPdM6_gHmMFg2xe8ICqWKXqECoL8FypVuAf6iM41tw&usqp=CAU"
+                    alt="Caios Negueba">
+            </div>
+            <div align="center">
+                <button type="submit" id="troca" name="troca">Troca</button>
+            </div>
+        </form>
+    </div>
+    <div class="form">
+        <form id="estadocidade">
+            <h3 align="center">Estados e Cidades</h3>
+            <div id="selects">
+                <select name="estados" id="estados" onchange="estadocidades()">
+                    <option selected value="">--Selecione o Estado--</option>
+                    <option value="pr">Paraná</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="rs">Rio Grande Sul</option>
+                </select>
+                <select name="cidades" id="cidades" disabled onchange="exibecidade()">
+                    <option selected id="selecionado" value="">--Selecione a Cidade--</option>
+                </select>
+                <div id="texto">
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="rodape">
+        <td>
+
+        </td>
+    </table>
+</body>
+
+</html>
